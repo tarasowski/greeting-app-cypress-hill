@@ -5,7 +5,7 @@ const assert = require('assert');
 
 let options = new chrome.Options();
 options.addArguments(
-    'headless', // runs the browser in headless mode
+    //'headless', // runs the browser in headless mode
     'no-sandbox', // Bypass OS security model, MUST BE LAST OPTION
     'disable-dev-shm-usage' // overcome limited resource problems
 );
