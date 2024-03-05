@@ -34,7 +34,6 @@ jobs:
     - name: Start Web Server
       run: |
         npm start &
-        sleep 5 # give Web server some time to bind to sockets, etc
 
     - name: Run Selenium Tests
       run: npx mocha test/test.spec.js
