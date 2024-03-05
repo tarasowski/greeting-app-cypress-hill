@@ -2,9 +2,9 @@ name: Run Selenium Tests
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   pull_request:
-    branches: [main]
+    branches: [ main ]
 
 jobs:
   build:
@@ -26,8 +26,8 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Setup Chrome Driver
-      uses: nanasess/setup-chromedriver@master
+    - name: Setup Chrome
+      uses: browser-actions/setup-chrome@latest
 
     - name: Start Web Server
       run: npm start &
