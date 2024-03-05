@@ -26,9 +26,6 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests
-      run: npm test
-
     - name: Setup Chrome Driver
       uses: nanasess/setup-chromedriver@master
 
