@@ -31,4 +31,3 @@ jobs:
 
     - name: Run Selenium Tests
       run: npx mocha test/test.spec.js
-1
