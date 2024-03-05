@@ -29,11 +29,6 @@ jobs:
     - name: Start Web Server
       run: npm start &
       background: true
-      
-    - name: Setup Chrome Driver
-      uses: nanasess/setup-chromedriver@master
 
     - name: Run Selenium Tests
-      run: npm run test:selenium
-      env:
-        SELENIUM_WEBDRIVER_ARGS: '--headless'
+      run: npx mocha test/test.spec.js
