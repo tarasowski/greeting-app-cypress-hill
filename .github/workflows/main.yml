@@ -31,16 +31,9 @@ jobs:
       with:
         chromedriver-version: '88.0.4324.96'
 
-    - name: Start Xvfb
-      run: |
-        sudo apt-get install -y xvfb
-        export DISPLAY=:99
-        Xvfb :99 &
-
     - name: Start Web Server
       run: |
         npm start &
-        sleep 5 # give Web server some time to bind to sockets, etc
 
     - name: Run Selenium Tests
       run: npx mocha test/test.spec.js
