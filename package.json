@@ -5,12 +5,18 @@
   "main": "greetingApp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "test:selenium": "node test/test.spec.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "chromedriver": "^122.0.4",
+    "mocha": "^10.3.0",
+    "selenium-webdriver": "^4.18.1"
   }
 }
